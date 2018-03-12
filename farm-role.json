@@ -1,0 +1,45 @@
+{
+   "networking": {
+    "networks": [
+      {
+        "id": ""
+        }
+     ],
+    "subnets": [
+      {
+        "id": ""
+      }
+    ]
+   },
+   "advancedConfiguration": {
+     "disableAgentIptablesManagement": false,
+     "disableAgentNtpManagement": false,
+     "rebootAfterHostInit": false
+   },
+   "bootstrapping": {
+     "enabled": true,
+     "type": "ChefServerBootstrapConfiguration"
+   },
+   "scaling": {
+     "minInstances": 1,
+     "enabled": false,
+     "maxInstances": 1
+   },
+   "alias": "",
+   "role": {
+     "id": ""
+   },
+   "cloudFeatures": {
+     "type": "AwsCloudFeatures"
+   },
+   "launchIndex": 1,
+   "security": {
+     "securityGroups": []
+   },
+   "availabilityZones": [],
+   "cloudLocation": "",
+   "instanceType": {
+       "id": ""
+   },
+   "cloudPlatform": "ec2"
+ }
