@@ -34,7 +34,7 @@
    },
    "launchIndex": 1,
    "security": {
-     "securityGroups": []
+     "securityGroups": [{"id": ""}]
    },
    "availabilityZones": [],
    "cloudLocation": "",
