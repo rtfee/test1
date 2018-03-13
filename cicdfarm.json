@@ -1,0 +1,61 @@
+{
+    "_meta": {
+        "schema_version": "v1beta0-7.7.11"
+    },
+    "farm": {
+        "name": "CI-CD demo",
+        "description": "CI-CD demo",
+        "project": {
+            "id": "75c84cfe-c5e8-4fc4-b1e4-e68665a4a30c"
+        },
+        "timezone": "America\/New_York",
+        "launchOrder": "simultaneous",
+        "variables": []
+    },
+    "roles": [
+        {
+            "alias": "base64-centos6",
+            "role": {
+                "name": "base64-centos6"
+            },
+            "cloudPlatform": "ec2",
+            "cloudLocation": "us-west-1",
+            "instanceType": {
+                "id": "m1.small"
+            },
+            "launchIndex": 0,
+            "advancedConfiguration": {
+                "disableAgentIptablesManagement": false,
+                "disableAgentNtpManagement": false,
+                "rebootAfterHostInit": false
+            },
+            "scaling": {
+                "enabled": true,
+                "maxInstances": 2,
+                "minInstances": 1,
+                "rules": []
+            },
+            "networking": {
+                "networks": [
+                    {
+                        "id": "vpc-9483dcf1"
+                    }
+                ],
+                "subnets": [
+                    {
+                        "id": "subnet-d7c5988e"
+                    }
+                ]
+            },
+            "cloudFeatures": {
+                "type": "AwsCloudFeatures",
+                "ebsOptimized": false
+            },
+            "variables": [],
+            "orchestration": {
+                "rules": []
+            },
+            "storage": []
+        }
+    ]
+}
