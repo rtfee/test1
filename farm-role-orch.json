@@ -1,0 +1,66 @@
+{
+	"networking": {
+		"networks": [{
+			"id": ""
+		}],
+		"subnets": [{
+			"id": ""
+		}]
+	},
+	"advancedConfiguration": {
+		"disableAgentIptablesManagement": false,
+		"disableAgentNtpManagement": false,
+		"rebootAfterHostInit": false
+	},
+	"orchestration": {
+		"rules": [{
+			"trigger": {
+				"event": {
+					"id": "HostInit"
+				},
+				"triggerType": "SpecificEventTrigger"
+			},
+			"target": {
+				"targetType": "TriggeringServerTarget"
+			},
+			"action": {
+				"actionType": "ScalrScriptAction",
+				"scriptVersion": {
+					"script": {
+						"name": "Hello World"
+					},
+					"version": -1
+				}
+			},
+			"timeout": 180,
+			"runAs": "",
+			"order": 10,
+			"blocking": true,
+			"enabled": true
+		}]
+	},
+	"scaling": {
+		"minInstances": 1,
+		"enabled": false,
+		"maxInstances": 1
+	},
+	"alias": "",
+	"role": {
+		"id": ""
+	},
+	"cloudFeatures": {
+		"type": "AwsCloudFeatures"
+	},
+	"launchIndex": 1,
+	"security": {
+		"securityGroups": [{
+			"id": ""
+		}]
+	},
+	"availabilityZones": [],
+	"cloudLocation": "",
+	"instanceType": {
+		"id": ""
+	},
+	"cloudPlatform": "ec2"
+}
