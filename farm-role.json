@@ -17,8 +17,7 @@
      "rebootAfterHostInit": false
    },
    "bootstrapping": {
-     "enabled": false,
-     "type": "ChefServerBootstrapConfiguration"
+     "enabled": false
    },
    "scaling": {
      "minInstances": 1,
