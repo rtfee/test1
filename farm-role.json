@@ -16,10 +16,6 @@
      "disableAgentNtpManagement": false,
      "rebootAfterHostInit": false
    },
-   "bootstrapping": {
-     "enabled": false,
-     "type": "ChefServerBootstrapConfiguration"
-   },
    "scaling": {
      "minInstances": 1,
      "enabled": false,
