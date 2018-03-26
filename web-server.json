@@ -3,7 +3,7 @@
         "schema_version": "v1beta0-7.8.0"
     },
     "farm": {
-        "name": "Lcc-test-farm",
+        "name": "prod-docker-cicd",
         "description": "",
         "project": {
             "id": "75c84cfe-c5e8-4fc4-b1e4-e68665a4a30c"
@@ -14,14 +14,14 @@
     },
     "roles": [
         {
-            "alias": "Ubuntu16-04",
+            "alias": "base-ubuntu1604-hvm",
             "role": {
-                "name": "Ubuntu16-04"
+                "name": "base-ubuntu1604-hvm"
             },
             "cloudPlatform": "ec2",
             "cloudLocation": "us-west-1",
             "instanceType": {
-                "id": "t2.nano"
+                "id": "t2.medium"
             },
             "launchIndex": 0,
             "advancedConfiguration": {
@@ -53,13 +53,18 @@
                 "type": "AwsCloudFeatures",
                 "ebsOptimized": false
             },
-            "variables": [],
+            "variables": [
+                {
+                    "name": "RequiredVariable",
+                    "value": "ec2option"
+                }
+            ],
             "orchestration": {
                 "rules": [
                     {
                         "trigger": {
                             "event": {
-                                "id": "HostInit"
+                                "id": "HostUp"
                             },
                             "triggerType": "SpecificEventTrigger"
                         },
@@ -70,7 +75,7 @@
                             "actionType": "ScalrScriptAction",
                             "scriptVersion": {
                                 "script": {
-                                    "name": "Install Apache"
+                                    "name": "demo apache docker"
                                 },
                                 "version": -1
                             }
