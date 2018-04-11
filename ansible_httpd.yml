@@ -1,0 +1,12 @@
+- name: Install Apache
+  hosts: localhost
+  sudo: True
+  tasks:
+    - name: yum_update
+      yum: pkg=* state=latest
+    - name: yum install httpd
+      yum: pkg=httpd state=latest 
+    - name: start httpd
+      service: name=httpd state=started
+    - name: setup index.html
+      copy: src=./index.html dest=/var/www/html/index.html 
