@@ -1,8 +1,6 @@
 - name: Install Apache
   become: True
   hosts: all
-  pre_tasks:
-    - raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
   tasks:
     - name: apt install apache2
       apt: pkg=apache2 state=latest
