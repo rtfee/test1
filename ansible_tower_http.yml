@@ -1,5 +1,5 @@
 - name: Install Apache
-  sudo: True
+  become: True
   hosts: all
   tasks:
     - name: apt install apache2
