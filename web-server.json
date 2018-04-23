@@ -64,7 +64,7 @@
                     {
                         "trigger": {
                             "event": {
-                                "id": "HostUp"
+                                "id": "HostInit"
                             },
                             "triggerType": "SpecificEventTrigger"
                         },
@@ -75,7 +75,7 @@
                             "actionType": "ScalrScriptAction",
                             "scriptVersion": {
                                 "script": {
-                                    "name": "demo apache docker"
+                                    "name": "demo apache docker_ryan"
                                 },
                                 "version": -1
                             }
