@@ -57,6 +57,10 @@
                 {
                     "name": "RequiredVariable",
                     "value": "ec2option"
+                },
+                 {
+                    "name": "GIT_URL",
+                    "value": "https://github.com/rtfee/test1.git"
                 }
             ],
             "orchestration": {
