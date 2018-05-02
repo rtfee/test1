@@ -19,9 +19,9 @@
                 "name": "base-ubuntu1604-hvm"
             },
             "cloudPlatform": "ec2",
-            "cloudLocation": "us-west-1",
+            "cloudLocation": "us-east-1",
             "instanceType": {
-                "id": "t2.medium"
+                "id": "m2.medium"
             },
             "launchIndex": 0,
             "advancedConfiguration": {
@@ -40,12 +40,12 @@
             "networking": {
                 "networks": [
                     {
-                        "id": "vpc-9483dcf1"
+                        "id": "vpc-cd8134aa"
                     }
                 ],
                 "subnets": [
                     {
-                        "id": "subnet-d7c5988e"
+                        "id": "subnet-c0b0e0ea"
                     }
                 ]
             },
