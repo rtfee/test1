@@ -6,7 +6,7 @@
         "name": "prod-docker-cicd",
         "description": "",
         "project": {
-            "id": "75c84cfe-c5e8-4fc4-b1e4-e68665a4a30c"
+            "id": "30c59dba-fc9b-4d0f-83ec-4b5043b12f72"
         },
         "timezone": "America\/New_York",
         "launchOrder": "simultaneous",
