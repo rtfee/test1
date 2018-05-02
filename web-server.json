@@ -57,6 +57,10 @@
                 {
                     "name": "RequiredVariable",
                     "value": "ec2option"
+                },
+                {
+                    "name": "GIT_URL",
+                    "value": "https://github.com/corefile/test1.git"
                 }
             ],
             "orchestration": {
@@ -75,7 +79,7 @@
                             "actionType": "ScalrScriptAction",
                             "scriptVersion": {
                                 "script": {
-                                    "name": "demo apache docker_ryan"
+                                    "name": "demo apache docker"
                                 },
                                 "version": -1
                             }
