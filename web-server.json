@@ -21,7 +21,7 @@
             "cloudPlatform": "ec2",
             "cloudLocation": "us-east-1",
             "instanceType": {
-                "id": "m2.medium"
+                "id": "m3.medium"
             },
             "launchIndex": 0,
             "advancedConfiguration": {
