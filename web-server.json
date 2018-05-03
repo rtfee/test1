@@ -53,6 +53,16 @@
                 "type": "AwsCloudFeatures",
                 "ebsOptimized": false
             },
+            "security": {
+                "securityGroups": [
+                    {
+                        "name": "default"
+                    },
+                    {
+                        "name": "scalr.6d341467.ip-pool"
+                    }
+                ]
+            },
             "variables": [
                 {
                     "name": "RequiredVariable",
